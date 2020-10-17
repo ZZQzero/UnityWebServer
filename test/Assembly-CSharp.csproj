@@ -194,19 +194,19 @@
     <None Include="Assets\XLua\Resources\tdr\tdr.lua.txt" />
     <None Include="Assets\InsideRia\Shader\PaintBrush.shader" />
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>/Users/mac/Desktop/test/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>/Users/mac/mygit/test/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>/Users/mac/Desktop/test/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>/Users/mac/mygit/test/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>/Users/mac/Desktop/test/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>/Users/mac/mygit/test/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>/Users/mac/Desktop/test/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>/Users/mac/mygit/test/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
-      <HintPath>/Users/mac/Desktop/test/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+      <HintPath>/Users/mac/mygit/test/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>/Applications/Unity2018.4.8/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -407,25 +407,25 @@
       <HintPath>/Applications/Unity2018.4.8/Unity.app/Contents/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="MidiPlayerUnity.OSX.DLL">
-      <HintPath>/Users/mac/Desktop/test/Assets/Plugins/MidiPlayerUnity.OSX.DLL.dll</HintPath>
+      <HintPath>/Users/mac/mygit/test/Assets/Plugins/MidiPlayerUnity.OSX.DLL.dll</HintPath>
     </Reference>
     <Reference Include="BGTParseUnity.OSX.DLL">
-      <HintPath>/Users/mac/Desktop/test/Assets/Plugins/BGTParseUnity.OSX.DLL.dll</HintPath>
+      <HintPath>/Users/mac/mygit/test/Assets/Plugins/BGTParseUnity.OSX.DLL.dll</HintPath>
     </Reference>
     <Reference Include="IMMusicianCommon">
-      <HintPath>/Users/mac/Desktop/test/Assets/Plugins/IMMusicianCommon.dll</HintPath>
+      <HintPath>/Users/mac/mygit/test/Assets/Plugins/IMMusicianCommon.dll</HintPath>
     </Reference>
     <Reference Include="AudioProcessUnity.OSX.DLL">
-      <HintPath>/Users/mac/Desktop/test/Assets/Plugins/AudioProcessUnity.OSX.DLL.dll</HintPath>
+      <HintPath>/Users/mac/mygit/test/Assets/Plugins/AudioProcessUnity.OSX.DLL.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>/Users/mac/Desktop/test/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+      <HintPath>/Users/mac/mygit/test/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
-      <HintPath>/Users/mac/Desktop/test/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
+      <HintPath>/Users/mac/mygit/test/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>/Users/mac/Desktop/test/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
+      <HintPath>/Users/mac/mygit/test/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>/Applications/Unity2018.4.8/Unity.app/Contents/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
