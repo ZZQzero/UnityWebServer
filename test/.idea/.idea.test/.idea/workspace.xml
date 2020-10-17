@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="71810ba2-3896-40d5-a931-1c65ba9b1fa8" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="NewLua" />
+      </list>
+    </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Demo/MidiPlayerDemo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/LuaAdd.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Ondrap.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/XLua/Tutorial/LuaCallCSharp/LuaCallCs.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8E2C93FA-6E86-4D5E-98F2-1C6B7E70B027/4a/a31a7371/EventTrigger.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/XLua/Tutorial/LoadLuaScript/ByString/ByString.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Test2.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/XLua/Src/LuaEnv.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/XLua/Examples/06_Coroutine/CoroutineTest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/49EAA56B-A5E7-470F-973D-6CB03B5D8D38/02/73590527/Resources.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/XLua/Gen/LuaAddWrap.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DF7127BA-07DC-446D-9F58-31A0EC7B1D63/5d/356db118/Void.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/XLua/Gen/LoadLuaWrap.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/49EAA56B-A5E7-470F-973D-6CB03B5D8D38/f8/ae01e752/Component.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/XLua/Examples/05_NoGc/NoGc.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/99258562-0D64-4271-98DD-F3A0E1467733/ae/00f0677b/EventArgs.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/XLua/Tutorial/LoadLuaScript/ByFile/ByFile.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/49EAA56B-A5E7-470F-973D-6CB03B5D8D38/e1/cf26c669/RectTransform.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Demo/AudioProcessDemo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/05523276-EF37-492A-8918-C36E7BB297B4/af/c1063fec/MovieTexture.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/XLua/Tutorial/LoadLuaScript/Loader/CustomLoader.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/49EAA56B-A5E7-470F-973D-6CB03B5D8D38/48/6636bd9e/Object.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Demo/BGTDemo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/PlayerAudio.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/DelegetEvent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B0F4A88E-07D0-4429-B197-B34ED1D4F480/db/f1a72a4f/IDroppable.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Eventtest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/XLua/Examples/02_U3DScripting/LuaBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/XLua/Tutorial/CSharpCallLua/CSCallLua.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Test.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/XLua/Editor/ExampleConfig.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/LoadLua.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8E2C93FA-6E86-4D5E-98F2-1C6B7E70B027/91/e208006b/IDropHandler.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/49EAA56B-A5E7-470F-973D-6CB03B5D8D38/94/ef575983/Color.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/49EAA56B-A5E7-470F-973D-6CB03B5D8D38/62/5c673fee/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/XLua/Examples/04_LuaObjectOrented/InvokeLua.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/UIManager.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/XLua/Examples/02_U3DScripting/LuaTestScript.lua.txt" />
+        <option value="$PROJECT_DIR$/Assets/Script/Test.cs" />
+        <option value="$PROJECT_DIR$/Assets/XLua/Examples/03_UIEvent/ButtonInteraction.lua.txt" />
+        <option value="$PROJECT_DIR$/Assets/StreamingAssets/Lua/test.lua" />
+        <option value="$PROJECT_DIR$/Assets/StreamingAssets/Lua/Init.lua" />
+        <option value="$PROJECT_DIR$/Assets/StreamingAssets/Lua/Main.lua" />
+        <option value="$PROJECT_DIR$/Assets/Script/Eventtest.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/UIManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Ondrap.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Test2.cs" />
+        <option value="$PROJECT_DIR$/Assets/XLua/Tutorial/LuaCallCSharp/LuaCallCs.cs" />
+        <option value="$PROJECT_DIR$/Assets/Lua/Test1.lua" />
+        <option value="$PROJECT_DIR$/Assets/Demo/BGTDemo.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/PlayerAudio.cs" />
+        <option value="$PROJECT_DIR$/Assets/Lua/Init.lua" />
+        <option value="$PROJECT_DIR$/Assets/XLua/Examples/02_U3DScripting/LuaBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Lua/EventHandler.lua" />
+        <option value="$PROJECT_DIR$/Assets/Script/DelegetEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Lua/Main.lua" />
+        <option value="$PROJECT_DIR$/Assets/Script/LoadLua.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/LuaAdd.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/WebRequest/UnitySocket.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="IgnoreFilesService">
+    <option name="directoryPrefixes">
+      <set>
+        <option value=".gradle" />
+        <option value=".idea" />
+        <option value=".tt" />
+        <option value="Library" />
+        <option value="Temp" />
+        <option value="bin" />
+        <option value="build" />
+        <option value="gradle" />
+        <option value="obj" />
+        <option value="out" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1ekwmVR3tTL0t3mkMGpgNPRKkhP" />
+  <component name="PropertiesComponent">
+    <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Assets/Lua" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Lua Application.Main.lua">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="userSelectedPid" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="4093">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" value="4093" />
+      <option name="userSelectedPid" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Luadebug" type="lua.app" factoryName="Lua Application" temporary="true">
+      <option name="program" value="$USER_HOME$/Downloads/lua-5.4.0-rc2_Win64_bin/lua.exe" />
+      <option name="file" value="$PROJECT_DIR$/Assets/Lua/Test1.lua" />
+      <option name="workingDir" value="$PROJECT_DIR$/Assets/Lua" />
+      <option name="debuggerType" value="2" />
+      <option name="params" value="" />
+      <option name="charset" value="UTF-8" />
+      <option name="showConsole" value="true" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Main.lua" type="lua.app" factoryName="Lua Application" temporary="true">
+      <option name="program" value="/usr/local/bin/lua" />
+      <option name="file" value="$PROJECT_DIR$/Assets/Lua/Main.lua" />
+      <option name="workingDir" value="" />
+      <option name="debuggerType" value="2" />
+      <option name="params" value="" />
+      <option name="charset" value="UTF-8" />
+      <option name="showConsole" value="true" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Lua Application.Main.lua" />
+        <item itemvalue="Lua Application.Luadebug" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="71810ba2-3896-40d5-a931-1c65ba9b1fa8" name="Default Changelist" comment="" />
+      <created>1594879057352</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1594879057352</updated>
+      <workItem from="1594879058799" duration="1064000" />
+      <workItem from="1594885484537" duration="2249000" />
+      <workItem from="1594889910491" duration="63000" />
+      <workItem from="1594891302836" duration="3187000" />
+      <workItem from="1594952575787" duration="22164000" />
+      <workItem from="1594984704851" duration="4976000" />
+      <workItem from="1594993208667" duration="93000" />
+      <workItem from="1595235018897" duration="63000" />
+      <workItem from="1595240737126" duration="7333000" />
+      <workItem from="1595253077246" duration="1257000" />
+      <workItem from="1595297171671" duration="1404000" />
+      <workItem from="1595299260690" duration="158000" />
+      <workItem from="1595299425876" duration="1431000" />
+      <workItem from="1595301109944" duration="499000" />
+      <workItem from="1595309655350" duration="2109000" />
+      <workItem from="1595321515684" duration="1320000" />
+      <workItem from="1595335348770" duration="1397000" />
+      <workItem from="1595383299560" duration="5841000" />
+      <workItem from="1595399778892" duration="15000" />
+      <workItem from="1595497806116" duration="527000" />
+      <workItem from="1595498341053" duration="196000" />
+      <workItem from="1595498710798" duration="1551000" />
+      <workItem from="1595510262043" duration="622000" />
+      <workItem from="1595558561148" duration="802000" />
+      <workItem from="1602564776584" duration="1219000" />
+      <workItem from="1602569327141" duration="2168000" />
+      <workItem from="1602915367527" duration="1785000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="VcsManagerConfiguration">
+    <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" suspend="NONE" type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

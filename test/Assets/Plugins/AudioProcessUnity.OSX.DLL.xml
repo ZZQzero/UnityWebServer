@@ -1,0 +1,653 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AudioProcessUnity.OSX.DLL</name>
+    </assembly>
+    <members>
+        <member name="T:com.immusician.Audio.AndroidAudioCallbackHelper">
+            <summary>
+            Android通过java回调的帮助类
+            </summary>
+        </member>
+        <member name="T:com.immusician.Audio.AndroidAudioCallbackHelper.OnVolumeChange">
+            <summary>
+            声音音量回调Delegate
+            </summary>
+            <param name="volume">音量</param>
+        </member>
+        <member name="T:com.immusician.Audio.AndroidAudioCallbackHelper.OnHeadStatusCallback">
+            <summary>
+            耳机状态回调
+            </summary>
+            <param name="status">0耳机拔出 1耳机插入</param>
+        </member>
+        <member name="M:com.immusician.Audio.AndroidAudioCallbackHelper.init">
+            <summary>
+            初始化单例
+            </summary>
+        </member>
+        <member name="M:com.immusician.Audio.AndroidAudioCallbackHelper.setAudioMode(System.Int32)">
+            <summary>
+            设置音频回调模式
+            </summary>
+            <param name="mode"> 0 调音器 1 曲谱 游戏 2 和弦 -1 空模式</param>
+        </member>
+        <member name="M:com.immusician.Audio.AndroidAudioCallbackHelper.setTunerCallback(com.immusician.Audio.TuneCallBackDelegate)">
+            <summary>
+            设置调音回调
+            </summary>
+            <param name="callback">回调方法</param>
+        </member>
+        <member name="M:com.immusician.Audio.AndroidAudioCallbackHelper.setStaveCallback(com.immusician.Audio.CallBackDelegate)">
+            <summary>
+            设置音频识别回调
+            </summary>
+            <param name="callback">回调方法</param>
+        </member>
+        <member name="M:com.immusician.Audio.AndroidAudioCallbackHelper.setChordCallback(com.immusician.Audio.ChordCallBackDelegateLocal)">
+            <summary>
+            设置和弦识别回调
+            </summary>
+            <param name="callback">回调方法</param>
+        </member>
+        <member name="M:com.immusician.Audio.AndroidAudioCallbackHelper.setVolumeCallback(com.immusician.Audio.RecordVolumeDelegate)">
+            <summary>
+            设置音量检测回调
+            </summary>
+            <param name="callbak">回调方法</param>
+        </member>
+        <member name="M:com.immusician.Audio.AndroidAudioCallbackHelper.staveCallFromJava(System.String)">
+            <summary>
+            java调用的方法
+            </summary>
+            <param name="str"></param>
+        </member>
+        <member name="M:com.immusician.Audio.AndroidAudioCallbackHelper.tunerCallFromJava(System.String)">
+            <summary>
+            java调用的方法
+            </summary>
+            <param name="str"></param>
+        </member>
+        <member name="M:com.immusician.Audio.AndroidAudioCallbackHelper.chordCallFromJava(System.String)">
+            <summary>
+            java调用的方法
+            </summary>
+            <param name="str"></param>
+        </member>
+        <member name="M:com.immusician.Audio.AndroidAudioCallbackHelper.volumeCallFromJava(System.String)">
+            <summary>
+            java调用的方法
+            </summary>
+            <param name="str"></param>
+        </member>
+        <member name="M:com.immusician.Audio.AndroidAudioCallbackHelper.audioDelayCallFromJava(System.String)">
+            <summary>
+            java调用的方法
+            </summary>
+            <param name="str"></param>
+        </member>
+        <member name="M:com.immusician.Audio.AndroidAudioCallbackHelper.volumeChangeFromJava(System.String)">
+            <summary>
+            java调用的方法
+            </summary>
+            <param name="str"></param>
+        </member>
+        <member name="M:com.immusician.Audio.AndroidAudioCallbackHelper.headsetStatusCallFromJava(System.String)">
+            <summary>
+            java调用的方法
+            </summary>
+            <param name="str"></param>
+        </member>
+        <member name="T:com.immusician.Audio.AudioEvent">
+            <summary>
+            音频识别算法需要用到的结构体
+            </summary>
+        </member>
+        <member name="F:com.immusician.Audio.AudioEvent.timeStamp">
+            <summary>
+            音频时间戳
+            </summary>
+        </member>
+        <member name="F:com.immusician.Audio.AudioEvent.duration">
+            <summary>
+            时长
+            </summary>
+        </member>
+        <member name="F:com.immusician.Audio.AudioEvent.soundArr">
+            <summary>
+            声音数组（弦-品对应的数组）
+            </summary>
+        </member>
+        <member name="F:com.immusician.Audio.AudioEvent.beatIndex">
+            <summary>
+            Beat下标
+            </summary>
+        </member>
+        <member name="F:com.immusician.Audio.AudioEvent._tuneArr">
+            <summary>
+            调音数组
+            </summary>
+        </member>
+        <member name="F:com.immusician.Audio.AudioEvent._adKey">
+            <summary>
+            升降调设置
+            </summary>
+        </member>
+        <member name="F:com.immusician.Audio.AudioEvent.sfftFlag">
+            <summary>
+            是否使用SFFT算法
+            </summary>
+        </member>
+        <member name="F:com.immusician.Audio.AudioEvent.sfft_isFirst">
+            <summary>
+            是否是第一个音
+            </summary>
+        </member>
+        <member name="F:com.immusician.Audio.AudioEvent.sfft_referFreArr">
+            <summary>
+            包含的频率数组
+            </summary>
+        </member>
+        <member name="F:com.immusician.Audio.AudioEvent.sfft_tieFreArr">
+            <summary>
+            上一组的延音数组
+            </summary>
+        </member>
+        <member name="F:com.immusician.Audio.AudioEvent.sfft_validFreArr">
+            <summary>
+            验证音数组
+            </summary>
+        </member>
+        <member name="F:com.immusician.Audio.AudioEvent.sfft_isBeforeSame">
+            <summary>
+            是否和上一组音相同
+            </summary>
+        </member>
+        <member name="F:com.immusician.Audio.AudioEvent.sfft_enableDetectEndPoint">
+            <summary>
+            是否启用端点检测
+            </summary>
+        </member>
+        <member name="T:com.immusician.Audio.ToneData">
+            <summary>
+            和弦识别返回的结构体
+            </summary>
+        </member>
+        <member name="F:com.immusician.Audio.ToneData.fre">
+            <summary>
+            频率
+            </summary>
+        </member>
+        <member name="F:com.immusician.Audio.ToneData.chord_statusArr">
+            <summary>
+            每个音的失败结果
+            </summary>
+        </member>
+        <member name="F:com.immusician.Audio.ToneData.chord_freArr">
+            <summary>
+            每个音的失败频率
+            </summary>
+        </member>
+        <member name="F:com.immusician.Audio.ToneData.chord_status">
+            <summary>
+            和弦识别结果 1=弹对 0=错误
+            </summary>
+        </member>
+        <member name="F:com.immusician.Audio.ToneData.chord_length">
+            <summary>
+            音的个数
+            </summary>
+        </member>
+        <member name="F:com.immusician.Audio.ToneData.chord_validStatus">
+            <summary>
+            验证结果 1包含验证音 0不包含
+            </summary>
+        </member>
+        <member name="T:com.immusician.Audio.VoidDelegate">
+            <summary>
+            空回调函数签名
+            </summary>
+        </member>
+        <member name="T:com.immusician.Audio.RecordVolumeDelegate">
+            <summary>
+            录音音量回调函数签名
+            </summary>
+            <param name="data"></param>
+        </member>
+        <member name="T:com.immusician.Audio.RecordStreamCallBack">
+            <summary>
+            录音流数据回调函数签名
+            </summary>
+            <param name="dataArrPtr">录音流数据 安卓是short类型数组 ios是float类型数组</param>
+            <param name="length">数组长度</param>
+        </member>
+        <member name="T:com.immusician.Audio.CallBackDelegate">
+            <summary>
+            音频识别回调函数签名
+            </summary>
+            <param name="status">识别状态</param>
+            <param name="reserve">下标</param>
+            <param name="isExistEndPoint">是否存在端点</param>
+            <param name="offsetTime">偏移时间</param>
+        </member>
+        <member name="T:com.immusician.Audio.TuneCallBackDelegate">
+            <summary>
+            调音回调函数签名
+            </summary>
+            <param name="fre">频率</param>
+            <param name="amp"></param>
+        </member>
+        <member name="T:com.immusician.Audio.ChordCallBackDelegateLocal">
+            <summary>
+            Android - 和弦识别回调函数签名
+            </summary>
+            <param name="statusArr">状态数组</param>
+            <param name="freArr">频率数组</param>
+            <param name="status">状态</param>
+            <param name="length">数组长度</param>
+            <param name="validStatus">验证状态</param>
+        </member>
+        <member name="T:com.immusician.Audio.ChordToneCallBackDelegate">
+            <summary>
+            iOS - 和弦识别回调函数签名
+            </summary>
+            <param name="toneDataPtr">toneData数组数据指针</param>
+            <param name="length">数组长度</param>
+            <example>
+            使用convertToneDataArr转换指针到ToneData数组
+            <code>
+            ToneData[] toneDataArr = AudioProcess.AudioProcess.convertToneDataArr(toneDataArrPtr, length);
+            ToneData toneData = toneDataArr[0];
+            </code>
+            </example>
+        </member>
+        <member name="T:com.immusician.Audio.AudioProcess">
+            <summary>
+            音频处理类
+            </summary>
+        </member>
+        <member name="M:com.immusician.Audio.AudioProcess.create(System.Single,System.Int32,System.Int32)">
+            <summary>
+            创建音频处理模块
+            </summary>
+            <param name="rate">采样率 默认32000 改成其他数值可能会产生问题</param>
+            <param name="mode">模式 1 flow模式 2 tune模式 4 follow模式 8 control模式 16 chord模式  64录音模式</param>
+            <param name="ver">模式 模式使用0</param>
+        </member>
+        <member name="M:com.immusician.Audio.AudioProcess.audioCallBackWith``1(``0,System.Int32)">
+            <summary>
+            设置音频回调方法
+            </summary>
+            <param name="handler">回调方法</param>
+            <param name="mode">回调模式 1曲谱识别 2调音识别 16和弦识别</param>
+            <typeparam name="T">回调方法的类型</typeparam>
+        </member>
+        <member name="M:com.immusician.Audio.AudioProcess.setAndroidCallbackNone">
+            <summary>
+            Andoid - 清除回调
+            </summary>
+        </member>
+        <member name="M:com.immusician.Audio.AudioProcess.enableCal(System.Int32)">
+            <summary>
+            iOS - 开启算法计算
+            </summary>
+            <param name="flag"></param>
+        </member>
+        <member name="M:com.immusician.Audio.AudioProcess.createDeviceAudioDelayTest(System.String)">
+            <summary>
+            Android-创建音频检测模块
+            </summary>
+            <param name="path">播放的音频</param>
+        </member>
+        <member name="M:com.immusician.Audio.AudioProcess.startDeviceAudioDelayTest">
+            <summary>
+            Android-开始进行音频检测
+            </summary>
+        </member>
+        <member name="M:com.immusician.Audio.AudioProcess.destroyDeviceAudioDelayTest">
+            <summary>
+            Android-销毁音频检测功能
+            </summary>
+        </member>
+        <member name="M:com.immusician.Audio.AudioProcess.setAudioDelay(System.Single)">
+            <summary>
+            Android-设置音频时延
+            </summary>
+            <param name="delayTime">时延时间</param>
+        </member>
+        <member name="M:com.immusician.Audio.AudioProcess.audioInit">
+            <summary>
+            初始化Audio设备
+            </summary>
+        </member>
+        <member name="M:com.immusician.Audio.AudioProcess.start">
+            <summary>
+            开启音频处理模块
+            </summary>
+        </member>
+        <member name="M:com.immusician.Audio.AudioProcess.pause">
+            <summary>
+            暂停音频检测模块
+            </summary>
+        </member>
+        <member name="M:com.immusician.Audio.AudioProcess.free">
+            <summary>
+            释放音频检测模块
+            </summary>
+        </member>
+        <member name="M:com.immusician.Audio.AudioProcess.audioSession_init">
+            <summary>
+            iOS设置AudioSession和采样率
+            </summary>
+        </member>
+        <member name="M:com.immusician.Audio.AudioProcess.resetAudioSession">
+            <summary>
+            iOS重设AudioSession和采样率
+            </summary>
+        </member>
+        <member name="M:com.immusician.Audio.AudioProcess.audioSession_getSamplate(System.Int32)">
+            <summary>
+            获取iOS设备采样率
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:com.immusician.Audio.AudioProcess.setChordCallBack(com.immusician.Audio.ChordToneCallBackDelegate)">
+            <summary>
+            设置和弦识别回调 （废弃 使用Android原生的回调到C#）
+            </summary>
+            <param name="handler"></param>
+        </member>
+        <member name="M:com.immusician.Audio.AudioProcess.startChordTune">
+            <summary>
+            开启和弦识别功能
+            </summary>
+        </member>
+        <member name="M:com.immusician.Audio.AudioProcess.enableChordCal(System.Int32)">
+            <summary>
+            启用和弦识别算法
+            </summary>
+            <param name="flag">1启用 0关闭</param>
+        </member>
+        <member name="M:com.immusician.Audio.AudioProcess.setChordInfor(System.Int32[],System.Int32,System.Int32)">
+            <summary>
+            设置和弦识别调音信息
+            </summary>
+            <param name="tuneArr">调音数组</param>
+            <param name="capo">变调夹</param>
+            <param name="key">升降调</param>
+        </member>
+        <member name="M:com.immusician.Audio.AudioProcess.setChordFreArr(System.Int32[],System.Boolean)">
+            <summary>
+            设置要失败的和弦数据
+            </summary>
+            <param name="dataArr">弦,品…… 1弦从0开始.</param>
+            <param name="validUKEmptyString">开启尤克里里空弦验证</param>
+            <returns>返回这组和弦的频率</returns>
+        </member>
+        <member name="M:com.immusician.Audio.AudioProcess.setTuneType(System.Int32)">
+            <summary>
+            设置调音类型
+            </summary>
+            <param name="type">0=吉他尤克里里 ，1=拇指琴</param>
+        </member>
+        <member name="M:com.immusician.Audio.AudioProcess.startTune">
+            <summary>
+            开启调音功能
+            </summary>
+        </member>
+        <member name="M:com.immusician.Audio.AudioProcess.enableTuneCal(System.Int32)">
+            <summary>
+            开启调音算法
+            </summary>
+            <param name="flag"></param>
+        </member>
+        <member name="M:com.immusician.Audio.AudioProcess.addAudioTrackFileName(System.String,System.Int32)">
+            <summary>
+            添加音频文件到轨道
+            </summary>
+            <param name="fileName">mp3音频文件地址</param>
+            <param name="duration">音频时长（Android使用）</param>
+        </member>
+        <member name="M:com.immusician.Audio.AudioProcess.clearAllTracks">
+            <summary>
+            清除所有轨道音频
+            </summary>
+        </member>
+        <member name="M:com.immusician.Audio.AudioProcess.setTrackStartTime(System.Int32,System.Single)">
+            <summary>
+            设置某个轨道音频开始播放时间
+            </summary>
+            <param name="trackIndex"></param>
+            <param name="startTime"></param>
+        </member>
+        <member name="M:com.immusician.Audio.AudioProcess.playAllTracks">
+            <summary>
+            播放所有轨道音频
+            </summary>
+        </member>
+        <member name="M:com.immusician.Audio.AudioProcess.stopAllTracks">
+            <summary>
+            停止所有轨道音频
+            </summary>
+        </member>
+        <member name="M:com.immusician.Audio.AudioProcess.setTrackSpeed(System.Single)">
+            <summary>
+            iOS - 设置音频播放速度
+            </summary>
+            <param name="speed">速度</param>
+        </member>
+        <member name="M:com.immusician.Audio.AudioProcess.silentTrack(System.Int32)">
+            <summary>
+            设置某个轨道静音
+            </summary>
+            <param name="trackIndex">轨道index</param>
+        </member>
+        <member name="M:com.immusician.Audio.AudioProcess.resumeSilentTrack(System.Int32)">
+            <summary>
+            恢复某个轨道播放
+            </summary>
+            <param name="trackIndex">轨道index</param>
+        </member>
+        <member name="M:com.immusician.Audio.AudioProcess.setPlayVolume(System.Int32)">
+            <summary>
+            Android - 设置播放音量
+            </summary>
+            <param name="level">音量level 默认-800</param>
+        </member>
+        <member name="M:com.immusician.Audio.AudioProcess.getPlayVolume">
+            <summary>
+            Android - 获取播放音量
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:com.immusician.Audio.AudioProcess.setRecognizeType(System.Int32)">
+            <summary>
+            设置识别类型
+            </summary>
+            <param name="type">0吉他尤克里里、1卡林巴琴、2非洲鼓</param>
+        </member>
+        <member name="M:com.immusician.Audio.AudioProcess.getNewStatus(System.Int32,System.Int32)">
+            <summary>
+            根据偏移时间转换谱子识别结果
+            </summary>
+            <param name="status">失败状态</param>
+            <param name="offsetTime">偏移时间</param>
+            <returns>转换后的结果</returns>
+        </member>
+        <member name="M:com.immusician.Audio.AudioProcess.audioDispatch(com.immusician.Audio.AudioEvent)">
+            <summary>
+            发送音频识别事件
+            </summary>
+            <param name="audioEvent">要识别的AudioEvent描述</param>
+        </member>
+        <member name="M:com.immusician.Audio.AudioProcess.setPlayType(System.Int32)">
+            <summary>
+            iOS - 设置播放类型（iOS消音使用）
+            </summary>
+            <param name="type">0=midi, 1=mp3/wav/ogg </param>
+        </member>
+        <member name="M:com.immusician.Audio.AudioProcess.getPlayType">
+            <summary>
+            iOS - 获取播放类型
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:com.immusician.Audio.AudioProcess.enableES(System.Int32)">
+            <summary>
+            开启消音算法
+            </summary>
+            <param name="flag">1开启 0关闭</param>
+        </member>
+        <member name="M:com.immusician.Audio.AudioProcess.enableRecognize(System.Int32)">
+            <summary>
+            开启失败功能
+            </summary>
+            <param name="flag"></param>
+        </member>
+        <member name="M:com.immusician.Audio.AudioProcess.startRecordVolume">
+            <summary>
+            开启音量检测功能
+            </summary>
+        </member>
+        <member name="M:com.immusician.Audio.AudioProcess.enableRecordVolumeCal(System.Int32)">
+            <summary>
+            开启音量检测算法
+            </summary>
+            <param name="flag">1开启 0关闭</param>
+        </member>
+        <member name="M:com.immusician.Audio.AudioProcess.setRecordVolumeCallback(com.immusician.Audio.RecordVolumeDelegate)">
+            <summary>
+            设置音量检测回调
+            </summary>
+            <param name="callback">回调方法</param>
+        </member>
+        <member name="M:com.immusician.Audio.AudioProcess.startRecordStream">
+            <summary>
+            开启录音流功能
+            </summary>
+        </member>
+        <member name="M:com.immusician.Audio.AudioProcess.setRecordStreamCallBack(com.immusician.Audio.RecordStreamCallBack)">
+            <summary>
+            iOS - 设置录音流回调
+            </summary>
+            <param name="callBack"></param>
+        </member>
+        <member name="M:com.immusician.Audio.AudioProcess.enableRecordStreamCal(System.Int32)">
+            <summary>
+            iOS - 开启录音流算法
+            </summary>
+            <param name="flag">1开启 0关闭</param>
+        </member>
+        <member name="M:com.immusician.Audio.AudioProcess.startControl">
+            <summary>
+            iOS - 开启控制
+            </summary>
+        </member>
+        <member name="M:com.immusician.Audio.AudioProcess.changeChannel(System.Int32)">
+            <summary>
+            iOS - 切换Channel
+            </summary>
+            <param name="channelIndex"></param>
+        </member>
+        <member name="M:com.immusician.Audio.AudioProcess.resetWriteRecordFile">
+            <summary>
+            Android - 重写录音文件 Android需要合成视频时使用
+            </summary>
+        </member>
+        <member name="M:com.immusician.Audio.AudioProcess.enableWriteRecordFile(System.Int32)">
+            <summary>
+            Android - 启用写录音文件
+            </summary>
+            <param name="flag"></param>
+        </member>
+        <member name="M:com.immusician.Audio.AudioProcess.debugSamplate(System.Int32)">
+            <summary>
+            iOS - debug打印音频采样率
+            </summary>
+            <param name="flag">1开启 0关闭</param>
+        </member>
+        <member name="M:com.immusician.Audio.AudioProcess.debugFree(System.Int32)">
+            <summary>
+            iOS - debug打印音频模块释放信息
+            </summary>
+            <param name="flag"></param>
+        </member>
+        <member name="M:com.immusician.Audio.AudioProcess.convertToneDataArr(System.IntPtr,System.Int32)">
+            <summary>
+            转换IntPtr到ToneData结构数组
+            </summary>
+            <param name="ptr"></param>
+            <param name="length"></param>
+            <returns></returns>
+        </member>
+        <member name="M:com.immusician.Audio.AudioProcess.getTimeStamp">
+            <summary>
+            获取时间戳
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:com.immusician.Audio.AudioProcess.fretArrToDataArr(System.Int32[],System.Int32,System.Int32)">
+            <summary>
+            频率数组转成Data数组
+            </summary>
+            <param name="fretArr">频率数组</param>
+            <param name="stringBegin">弦下标从几开始，默认1</param>
+            <param name="stringNum">弦数</param>
+            <returns>弦、品 格式的数组</returns>
+        </member>
+        <member name="M:com.immusician.Audio.AudioProcess.isSameBeatSound(System.Int32[],System.Int32[])">
+            <summary>
+            判断两组soundArr是否相同
+            </summary>
+            <param name="soundArr1">soundArr1</param>
+            <param name="soundArr2">soundArr2</param>
+            <returns></returns>
+        </member>
+        <member name="M:com.immusician.Audio.AudioProcess.getFreNew(System.Int32)">
+            <summary>
+            Pitch音高转Fre频率
+            </summary>
+            <param name="picth">音高数据</param>
+            <returns>fre频率</returns>
+        </member>
+        <member name="M:com.immusician.Audio.AudioProcess.convertPitchArrToFreArr(System.Int32[])">
+            <summary>
+            转换音高数组为频率数组
+            </summary>
+            <param name="pitchArr">音高数组</param>
+            <returns>频率数组</returns>
+        </member>
+        <member name="M:com.immusician.Audio.AudioProcess.convertSoundArrToFreArr(System.Byte[],System.Int32[],System.Int32)">
+            <summary>
+            转换SoundArr数组为频率数组
+            </summary>
+            <param name="tuneArr">调音数据</param>
+            <param name="soundArr">SoundArr</param>
+            <param name="capo">变调夹</param>
+            <returns>频率数组</returns>
+        </member>
+        <member name="M:com.immusician.Audio.AudioProcess.validFreArr(System.Byte[],System.Int32[],System.Int32,System.Int32,System.Single[],System.Single[])">
+            <summary>
+            根据延音 计算验证后的频率
+            </summary>
+            <param name="tuneArr"></param>
+            <param name="soundArr"></param>
+            <param name="stringNum"></param>
+            <param name="capo"></param>
+            <param name="sfft_referFreArr"></param>
+            <param name="sfft_tieFreArr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:com.immusician.Audio.AudioProcess.convertSoundToFre(System.Byte[],System.Int32,System.Int32,System.Int32)">
+            <summary>
+            转换弦品数据为频率
+            </summary>
+            <param name="tuneArr">调音设置</param>
+            <param name="strIndex">弦Index</param>
+            <param name="fretIndex">品Index</param>
+            <param name="capo">变调夹</param>
+            <returns>频率</returns>
+        </member>
+    </members>
+</doc>
