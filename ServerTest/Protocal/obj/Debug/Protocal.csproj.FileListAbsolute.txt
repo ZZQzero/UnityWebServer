@@ -1,0 +1,7 @@
+G:\VStest\ClientTest\ClientTest\Protocal.dll
+G:\VStest\ClientTest\ClientTest\Protocal.pdb
+G:\VStest\ServerTest\Protocal\obj\Debug\Protocal.csprojAssemblyReference.cache
+G:\VStest\ServerTest\Protocal\obj\Debug\Protocal.csproj.CoreCompileInputs.cache
+G:\VStest\ServerTest\Protocal\obj\Debug\Protocal.dll
+G:\VStest\ServerTest\Protocal\obj\Debug\Protocal.pdb
+G:\VStest\ServerTest\Protocal\obj\Debug\Protocal.csproj.CopyComplete
