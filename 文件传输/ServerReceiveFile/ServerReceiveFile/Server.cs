@@ -73,7 +73,7 @@ namespace ServerReceiveFile
             string bagLast = Encoding.Unicode.GetString(TransferFiles.ReceiveVarData(client));
             Console.WriteLine("文件名:" + SendFileName + "包大小:" + bagSize + "包总数:" + bagCount + "最后一个包的大小:" + bagLast);
             //string FullPath = Path.Combine(Environment.CurrentDirectory, SendFileName);
-            string FullPath = @"G:/Server/2bb.zip";
+            string FullPath = @"/Users/mac/Desktop/aaa.mp4";
             using (FileStream fileStream = new FileStream(FullPath, FileMode.Create, FileAccess.Write))
             {
                 int SendCount = 0;

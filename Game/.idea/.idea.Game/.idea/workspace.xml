@@ -14,6 +14,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Script/ClientSocket.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7EE36968-FD45-40A0-BFED-BB700F15DDED/45/86818e7d/TransferFiles.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/BA70B917-36BD-40CB-990A-357097DBA9C3/184/Task.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -92,7 +93,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1603091603409</updated>
-      <workItem from="1603091604703" duration="3319000" />
+      <workItem from="1603091604703" duration="4630000" />
     </task>
     <servers />
   </component>
